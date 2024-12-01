@@ -1,0 +1,647 @@
+/* Reset de estilos ------------------------------------------------------------------------------------------------------------------*/*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   
+/* Estilo para el encabezado ------------------------------------------------------------------------------------------------------------------*/
+header {
+    display: flex; /* Utiliza el modelo de caja flexible */
+    align-items: center; /* Centra verticalmente los elementos */
+    background-color: gray; /* Color de fondo del encabezado */
+    padding: 10px; /* Espaciado interno del encabezado */
+    justify-content: space-between; /* Distribuye los elementos de forma equitativa en el contenedor */
+}
+.logo img {
+    height: 150px; /* Altura del logo */
+    width: 150px; /* Ancho del logo */
+    margin-right: 10px; /* Espaciado derecho del logo */
+}
+
+nav a {
+    text-decoration: none; /* Quita la decoración de subrayado de los enlaces */
+    color: black; /* Color de texto de los enlaces */
+    font-weight: 1000; /* Grosor de fuente */
+    font-style: italic; /* Estilo de fuente en cursiva */
+    font-variant: small-caps; /* Utiliza letras minúsculas y capitaliza las mayúsculas */
+    font-size: 25px; /* Tamaño de fuente */
+    padding-right: 20px; /* Espaciado derecho de los enlaces */
+}
+nav a:hover {
+    color: white; /* Cambia el color del texto al pasar el mouse por encima */
+}
+/* Estilo para el pie de página ------------------------------------------------------------------------------------------------------------------*/
+footer {
+    background-color: #333; /* Color de fondo del pie de página */
+    color: #fff; /* Color de texto del pie de página */
+    padding: 20px; /* Espaciado interno del pie de página */
+    text-align: center; /* Alineación del texto en el centro */
+    margin-top: 50px; /* Agrega un margen superior para separarlo de la sección de testimonios */
+}
+.contacto h3 {
+    font-size: 1.5em; /* Tamaño de fuente del título */
+    margin-bottom: 10px; /* Espaciado inferior del título */
+}
+.contacto ul {
+    list-style: none; /* Quita la viñeta de la lista */
+    padding: 0; /* Elimina el relleno de la lista */
+}
+.contacto li {
+    margin-bottom: 5px; /* Espaciado inferior de los elementos de lista */
+}
+.contacto li:last-child {
+    margin-bottom: 0; /* Elimina el espaciado inferior del último elemento de la lista */
+}
+.contacto a {
+    color: rgb(94, 94, 234); /* Color de texto para los enlaces de contacto */
+    text-decoration: none; /* Quita la decoración de subrayado de los enlaces de contacto */
+}
+.contacto a:hover {
+    text-decoration: underline; /* Subraya el enlace al pasar el mouse por encima */
+}
+/*Estilo para las noticias -------------------------------------------------------------------------------------------------------------------*/
+div.noticia {
+    font: bold 12px/2 Time New Roman; /* Fuente y tamaño del texto */
+    font-size: 1.8em; /* Tamaño de la fuente */
+    width: 100%; /* Ancho completo para ajustarse a lo largo de la pantalla */
+    margin: 10px auto; /* Margen superior e inferior de 20px, centrado horizontalmente */
+    color: black; /* Color del texto */
+    padding: 50px; /* Espaciado interno de 100px en todos los lados */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del tamaño */
+}
+/* Estilo para las imágenes dentro de las noticias en la posición izquierda */
+div.noticia img.izquierda {
+    height: 350px; /* Altura de la imagen */
+    width: 350px; /* Ancho de la imagen */
+    float: left; /* Flotar la imagen a la izquierda */
+    margin-right: 20px; /* Margen derecho de 20px para separar la imagen del texto */
+}
+/* Estilo para las imágenes dentro de las noticias en la posición derecha */
+div.noticia img.derecha {
+    height: 350px; /* Altura de la imagen */
+    width: 350px; /* Ancho de la imagen */
+    float: right; /* Flotar la imagen a la derecha */
+    padding-left: 50px;
+}
+div.noticia aside.p{
+    padding-left: 50px;
+}
+/* Restablecer el flujo de elementos después de las imágenes flotantes */
+div.reset {
+    clear: both; /* Limpiar el flujo de elementos para evitar que las imágenes floten junto al siguiente contenido */
+}
+.noticia .contenido {
+    display: flex; /* Utiliza el modelo de caja flexible */
+    align-items: center; /* Alinea los elementos verticalmente */
+}
+/* Estilo para el texto y enlaces en el aside */
+.noticia aside {
+    flex: 1; /* Ocupa todo el espacio disponible */
+}
+.hidden {
+    display: none;
+}
+/*Estilos para el cuerpo de la pagina --------------------------------------------------------------------------------------------------------------------*/
+body{
+    background-color: #F2AE81;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/*Esyilos para el titulo h2-------------------------------------------------------------------------------------------------------------------------------*/
+h5{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100px;
+}
+/* Estilo para el contenedor de testimonios --------------------------------------------------------------------------------------------------------------*/
+.testimonio {
+    display: flex; /* Utiliza el modelo de caja flexible */
+    justify-content: space-around; /* Distribuye los elementos equitativamente a lo largo del contenedor */
+    margin-top: 50px; /* Margen superior */
+}
+
+/* Estilo para cada elemento de testimonio */
+.testimonio-item {
+    width: 30%; /* Ancho de cada elemento de testimonio */
+    padding: 20px; /* Espaciado interno */
+    background-color: #f9f9f9; /* Color de fondo */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    text-align: center; /* Alineación del texto al centro */
+}
+
+/* Estilo para la imagen dentro de cada testimonio */
+.testimonio-item img {
+    width: 80px; /* Ancho de la imagen */
+    height: 80px; /* Altura de la imagen */
+    border-radius: 50%; /* Borde redondeado para que sea circular */
+    margin-bottom: 10px; /* Margen inferior */
+}
+
+/* Estilo para el nombre dentro de cada testimonio */
+.testimonio-item h3 {
+    margin-bottom: 10px; /* Margen inferior */
+    font-size: 18px; /* Tamaño de fuente */
+    color: #333; /* Color del texto */
+}
+
+/* Estilo para el texto del testimonio */
+.testimonio-item p {
+    font-size: 14px; /* Tamaño de fuente */
+    color: #666; /* Color del texto */
+}
+/* Estilos generales del encabezado */
+header {
+    background-color: #333; /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto del encabezado */
+    padding: 10px 20px; /* Espaciado interno del encabezado */
+    display: flex; /* Utiliza el modelo de caja flexible */
+    justify-content: space-between; /* Distribuye los elementos de forma equitativa en el contenedor */
+    align-items: center; /* Alinea los elementos verticalmente */
+}
+
+/* Estilos para el logotipo */
+.logo img {
+    width: 150px; /* Ancho del logotipo */
+}
+
+/* Estilos para los enlaces de navegación */
+.nav-link {
+    display: inline-block; /* Hace que el botón se muestre como un bloque en línea */
+    background-color: gray; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    text-decoration: none; /* Quita la decoración de subrayado */
+    padding: 8px 16px; /* Espaciado interno del botón */
+    border-radius: 5px; /* Borde redondeado del botón */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+}
+
+/* Estilos para la sección del catálogo */
+.catalogo {
+    padding: 20px; /* Espaciado interno de la sección del catálogo */
+}
+
+/* Estilos para el título de la sección */
+.titulo-seccion {
+    text-align: center; /* Alineación del texto al centro */
+}
+
+/* Estilos para la lista de artículos */
+.lista-articulos {
+    display: flex; /* Utiliza el modelo de caja flexible */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea si no caben */
+    justify-content: center; /* Centra los artículos horizontalmente */
+}
+
+/* Estilos para cada artículo */
+.articulo {
+    flex-basis: calc(50% - 20px); /* Ancho inicial para cada artículo (50% - margen) */
+    background-color: #f9f9f9; /* Color de fondo del artículo */
+    border-radius: 10px; /* Borde redondeado del artículo */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra del artículo */
+    margin-bottom: 20px; /* Margen inferior del artículo */
+    padding: 20px; /* Espaciado interno del artículo */
+}
+
+/* Establece un margen derecho solo en los artículos impares */
+.articulo:nth-child(odd) {
+    margin-right: 20px; /* Margen derecho solo en los artículos impares */
+}
+
+/* Elimina el margen derecho del último artículo en cada fila */
+.articulo:nth-child(2n) {
+    margin-right: 0; /* Elimina el margen derecho del último artículo en cada fila */
+}
+
+/* Estilos para las imágenes dentro de los artículos */
+.articulo img {
+    max-width: 100%; /* La imagen se ajustará al ancho del contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+    border-radius: 10px; /* Borde redondeado de la imagen */
+    margin-bottom: 10px; /* Margen inferior de la imagen */
+}
+
+/* Estilos para los títulos de los artículos */
+.articulo h3 {
+    font-size: 18px; /* Tamaño de fuente del título */
+    margin-bottom: 10px; /* Margen inferior del título */
+}
+
+/* Estilos para los párrafos de los artículos */
+.articulo p {
+    color: #666; /* Color del texto del párrafo */
+}
+
+/* Estilos para los botones de ver más */
+.btn-ver-mas {
+    display: inline-block; /* Hace que el botón se muestre como un bloque en línea */
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    text-decoration: none; /* Quita la decoración de subrayado */
+    padding: 8px 16px; /* Espaciado interno del botón */
+    border-radius: 5px; /* Borde redondeado del botón */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+}
+
+/* Estilos para el hover del botón de ver más */
+.btn-ver-mas:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse por encima */
+}
+/* Establece un contenedor para las imágenes dentro de las noticias */
+div.catalo img {
+    display: block; /* Cambia el elemento a bloque para poder centrarlo */
+    margin: 0 auto 20px; /* Margen automático en los lados para centrar horizontalmente y espacio en la parte inferior para separar del texto */
+    height: 350px; /* Altura de la imagen */
+    max-width: 100%; /* Establece el ancho máximo de la imagen al 100% del contenedor padre */
+    border-radius: 10px; /* Borde redondeado para la imagen */
+    transition: box-shadow 0.8s ease; /* Transición suave del efecto de sombra */
+}
+
+/* Aplica el efecto de sombra al pasar el cursor sobre la imagen */
+div.catalo img:hover {
+    box-shadow: 0 0 20px rgba(1.5, 1.5, 1.5, 2.5); /* Crea una sombra suave alrededor de la imagen */
+}
+
+/* Estilo para las imágenes dentro de las noticias en la posición izquierda */
+div.catalo img.izquierda {
+    float: left; /* Flotar la imagen a la izquierda */
+    margin-right: 20px; /* Margen derecho para separar la imagen del texto */
+    height: 350px;
+    width: 350px;
+}
+
+/* Estilo para las imágenes dentro de las noticias en la posición derecha */
+div.catalo img.derecha {
+    float: right; /* Flotar la imagen a la derecha */
+    margin-left: 20px; /* Margen izquierdo para separar la imagen del texto */
+    height: 350px;
+    width: 350px;
+}
+
+/* Restablece el flujo de elementos después de las imágenes flotantes */
+div.catalo {
+    clear: both; /* Limpiar el flujo de elementos para evitar que las imágenes floten junto al siguiente contenido */
+}
+
+/* Establece el ancho máximo para el contenedor de la noticia */
+div.catalo {
+    max-width: 800px; /* Puedes ajustar este valor según sea necesario */
+    margin: 0 auto; /* Centra el contenedor de la noticia horizontalmente */
+}
+
+
+img {
+    display: block;         /* Convierte la imagen en un bloque */
+    margin-left: auto;      /* Aplica margen automático a la izquierda */
+    margin-right: auto;     /* Aplica margen automático a la derecha */
+    max-width: 100%;        /* Asegura que la imagen no se desborde */
+    height: 500px; 
+    width: 1000px;         
+}
+.p1 {
+    font-size: 45px;  /* Aumenta el tamaño de la letra */
+}
+.p2 {
+    font-size: 35px;  /* Aumenta el tamaño de la letra */
+}
+
+/* Estilos generales para el menú */
+.nav-link {
+    color: black;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    background-color: #a17e67; /* Color de fondo */
+    transition: background-color 0.3s, transform 0.3s, border 0.3s;
+    border: 2px solid #D1D1D1; /* Borde gris */
+}
+
+/* Efecto de hover para los botones de donación */
+.nav-link:hover {
+    background-color: #E28F63; /* Color cuando el ratón pasa por encima */
+    transform: scale(1.05); /* Aumento de tamaño */
+    border: 2px solid #B5B5B5; /* Cambio de borde */
+}
+
+/* Separar los botones */
+.donation-container {
+    display: flex;
+    flex-direction: column; /* Para que los botones estén uno debajo del otro */
+    align-items: center; /* Centrar los botones */
+    gap: 20px; /* Espacio entre los botones */
+}
+
+.titulo-seccion {
+    text-align: center; /* Centrar el texto */
+    margin-top: 20px;
+}
+
+.p2 {
+    font-size: 18px; /* Ajuste en tamaño de fuente para mayor legibilidad */
+    color: #333;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+
+
+#slider {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 1920px;
+    overflow: hidden;
+    padding: 10px 0;
+    margin: auto;
+  
+    .main {
+      position: relative;
+      width: 600px;
+      height: 400px;
+      border-radius: 15px;
+      margin: 0 auto;
+      z-index: 10;
+  
+      input {
+        display: none;
+      }
+  
+      .nav {
+        position: absolute;
+        bottom: -60px;
+        left: 0px;
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+        z-index: 100;
+        transition: 0.5s;
+        -moz-transition: 0.5s;
+        -webkit-transition: 0.5s;
+  
+        .buttons {
+          position: absolute;
+          right: 0px;
+          top: 10px;
+  
+          label {
+            position: relative;
+            display: block;
+            float: left;
+            margin-right: 10px;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            background-color: black;
+            border-radius: 50%;
+            border: 1px solid #777777;
+            cursor: pointer;
+            overflow: hidden;
+  
+            &.active-label {
+              border: 1px solid rgba(0, 75, 138, 0.8);
+            }
+  
+            & > img {
+              position: absolute;
+  
+              width: 150px;
+              height: 150px;
+              object-fit: cover;
+              opacity: 0.5;
+              transition: 0.75s;
+              -moz-transition: 0.75s;
+              -webkit-transition: 0.75s;
+  
+              &.active-buttons {
+                opacity: 1;
+              }
+            }
+  
+            &:hover img {
+              opacity: 0.8;
+            }
+          }
+        }
+      }
+  
+      .overlay {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 0 0 20px 20px;
+      }
+  
+      .images {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 8000px;
+        transition: 0.75s;
+        -moz-transition: 0.75s;
+        -webkit-transition: 0.75s;
+  
+        .active-images {
+          bottom: 0px;
+          width: 600px;
+          height: 400px;
+          filter: blur(0) contrast(100%);
+          box-shadow: 0px 0px 10px #202020;
+          border-radius: 20px;
+          z-index: 1;
+        }
+  
+        article {
+          overflow: hidden;
+          position: relative;
+          bottom: -41px;
+          float: left;
+          width: 450px;
+          height: 300px;
+          background-color: #000000;
+          filter: blur(1px) contrast(60%);
+          transition: 0.75s;
+          -moz-transition: 0.75s;
+          -webkit-transition: 0.75s;
+          z-index: -1;
+  
+          img,
+          iframe {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+  
+      .btn_after,
+      .btn_previous {
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(270deg);
+  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        color: #f1efef;
+        background-color: #333333;
+        border-radius: 50%;
+        border: none;
+        padding: 0;
+  
+        z-index: 1000;
+        transition: 0.3s;
+  
+        &:hover {
+          background-color: #262729;
+          color: #d4d4d4;
+          width: 32px;
+          height: 32px;
+        }
+  
+        svg {
+          width: 100%;
+          height: 100%;
+        }
+      }
+  
+      .btn_after {
+        left: auto;
+        right: -40px;
+        transform: translate(50%, -50%) rotate(90deg);
+      }
+  
+      .btn_previous {
+        left: -40px;
+        transform: translate(-50%, -50%) rotate(270deg);
+      }
+    }
+  
+    .imagebg {
+      position: absolute;
+      top: 50px;
+      left: 0px;
+      border: 2px solid #a19f9f;
+      border-left: 0px;
+      border-right: 0px;
+      width: 100%;
+      height: 300px;
+      background-color: #f7f7f7;
+      z-index: 0;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #slider {
+      padding: 5px 0;
+      margin: 20px 0;
+      margin-bottom: 60px;
+  
+      .main {
+        width: 70vw;
+        height: 260px;
+        border-radius: 10px;
+  
+        &:hover .nav {
+          bottom: 0;
+        }
+  
+        .nav {
+          overflow: hidden;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+  
+          bottom: -80px;
+          height: 50px;
+          line-height: 40px;
+          border-radius: 20px;
+  
+          .buttons {
+            display: flex;
+            bottom: 5px;
+            right: auto;
+            left: 5px;
+            label {
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            & > img {
+                width: 40px;
+            }
+            }
+        }
+        }
+        .images {
+        .active-images {
+            width: 70vw;
+            height: 200px;
+        }
+
+        article {
+            bottom: -22px;
+            width: 60vw;
+            height: 150px;
+        }
+        }
+        .btn_after,
+        .btn_previous {
+        width: 25px;
+        height: 25px;
+        &:hover {
+            width: 28px;
+            height: 28px;
+        }
+        }
+
+        .btn_after {
+        right: -30px;
+        }
+        .btn_previous {
+        left: -30px;
+        }
+    }
+
+.imagebg {
+        top: 25px;
+        height: 150px;
+    }
+    }
+}  
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse; /* Elimina espacios entre bordes */
+    text-align: center; /* Alinea el texto dentro de la tabla */
+    font-size: 1.5rem; /* Tamaño de letra más grande */
+}
+
+th, td {
+    padding: 15px; /* Espaciado interno */
+    border: 5px solid #333; /* Bordes visibles */
+}
+
+th {
+    background-color: white; /* Color de fondo del encabezado */
+    color: black; /* Color del texto del encabezado */
+}
+
+td {
+    background-color: #ffffff; /* Fondo blanco para las celdas */
+    color: #333; /* Color del texto */
+}
